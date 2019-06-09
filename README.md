@@ -1,0 +1,13 @@
+# Build React Apps Fast
+
+> Code for presentaion at React Next 2k19
+
+### Installaion
+
+```bash
+$ yarn && yarn storybook
+```
+
+Go to http://localhost:6006
+
+Get the [Slides](https://docs.google.com/presentation/d/1zhy-XJF2s1u5NGEerMNZP5aJMVwkZSqXQMvGcUmk7Ew/edit?usp=sharing)
