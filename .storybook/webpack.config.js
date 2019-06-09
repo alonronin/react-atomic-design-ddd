@@ -1,13 +1,9 @@
-const config = require('../webpack.config');
+const path = require('path');
+const custom = require('../webpack.config.js');
 
-module.exports = (baseConfig, env, defaultConfig) => {
-	// configType has a value of 'DEVELOPMENT' or 'PRODUCTION'
-	// You can change the configuration based on that.
-	// 'PRODUCTION' is used when building the static version of storybook.
-
-	// Make whatever fine-grained changes you need
-	defaultConfig.module.rules.push(...config.module.rules);
-
-	// Return the altered config
-	return defaultConfig;
+module.exports = async ({ config, mode }) => {
+  return {
+    ...config,
+    module: { ...config.module, rules: custom.module.rules },
+  };
 };

@@ -3,150 +3,151 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 
 body {
-	font-family: "Open Sans";
-	font-size: 16px;
-	color: #5C6372;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  color: #5c6372;
 }
 
-* {
-	outline: none;
-	line-height: 22px;
+body * {
+  outline: none;
+  line-height: 22px;
 }
 
 #root {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 form {
-	flex: 1;
-	display: flex;
-	flex-direction: column;
+  padding-top: 30px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 input {
-	flex: 1;
-	border: 0;
-	font-size: 16px;
-	padding: 0 0 5px 0;
-	color: #5C6372;
-	border-bottom: 1px solid #5C6372;
-	outline: none;
+  flex: 1;
+  border: 0;
+  font-size: 16px;
+  padding: 0 0 5px 0;
+  color: #5c6372;
+  border-bottom: 1px solid #5c6372;
+  outline: none;
 }
 
 button {
-	flex: 1;
-	border-radius: 28px;
-	background-color: #35D7BE;
-	border: 0;
-	font-size: 24px;
-	color: white;
-	padding: 15px 30px;
-	cursor: pointer;
+  flex: 1;
+  border-radius: 28px;
+  background-color: #35d7be;
+  border: 0;
+  font-size: 24px;
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
 }
 
 label {
-	font-size: 16px;
-	color: #5C6372;
-	z-index: 1;
+  font-size: 16px;
+  color: #5c6372;
+  z-index: 1;
 }
 
 .field {
-	position: relative;
-	height: 50px;
-	margin-bottom: 30px;
-	flex: 1;
-	display: flex;
+  position: relative;
+  height: 50px;
+  margin-bottom: 30px;
+  flex: 1;
+  display: flex;
 }
 
 .field.field-value label {
-	font-size: 12px;
-	line-height: 12px;
-	bottom: 32px;
+  font-size: 12px;
+  line-height: 12px;
+  bottom: 32px;
 }
 
 .field label {
-	position: absolute;
-	bottom: 5px;
-	transition: all .2s ease-in-out;
+  position: absolute;
+  bottom: 5px;
+  transition: all 0.2s ease-in-out;
 }
 
 .field input {
-	align-self: flex-end;
-	background-color: transparent;
+  align-self: flex-end;
+  background-color: transparent;
 }
 
 .field.field-error input {
-	border-color: #FA5656;
+  border-color: #fa5656;
 }
 
 .field.field-error p {
-	position: absolute;
-	font-size: 14px;
-	line-height: 19px;
-	bottom: -24px;
-	margin: 0;
-	color: #FA5656;
+  position: absolute;
+  font-size: 14px;
+  line-height: 19px;
+  bottom: -24px;
+  margin: 0;
+  color: #fa5656;
 }
 
 .logo {
-	font-family: "Amatic SC";
-	background-position: top center;
-	background-repeat: no-repeat;
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='70' height='66'%3e%3cg fill='none' fill-rule='evenodd'%3e%3cpath fill='%23FFCB05' d='M40 14c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m-20 0c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m15 7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m10 0c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m5-7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m4 7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m-38 0c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m14-7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m-5 7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5'/%3e%3cpath fill='%23FFCB05' d='M6.2 20.94C6.2 11.01 18.85 3.22 35 3.22s28.8 7.79 28.8 17.72v3.23a1.6 1.6 0 0 1-1.6 1.6H7.8a1.6 1.6 0 0 1-1.6-1.6v-3.23zM7.8 29h54.4c2.65 0 4.8-2.17 4.8-4.83v-3.23C67 9 53.24 0 35 0 16.76 0 3 9 3 20.94v3.23A4.82 4.82 0 0 0 7.8 29z'/%3e%3cpath fill='%2335D7BE' d='M4.6 34.15h32.55c1.26 0 2.5.5 3.4 1.39l3.2 3.15A8.03 8.03 0 0 0 49.4 41c2.05 0 4.1-.77 5.66-2.3l3.2-3.16a4.87 4.87 0 0 1 3.39-1.39h3.75c.88 0 1.6-.7 1.6-1.57 0-.88-.72-1.58-1.6-1.58h-3.75A8 8 0 0 0 56 33.31l-3.2 3.15a4.86 4.86 0 0 1-6.8 0l-3.2-3.15A8 8 0 0 0 37.15 31H4.6c-.88 0-1.6.7-1.6 1.58 0 .87.72 1.57 1.6 1.57'/%3e%3cpath fill='%23FFCB05' d='M63.8 58a4.8 4.8 0 0 1-4.8 4.8H11A4.8 4.8 0 0 1 6.2 58v-3.2c0-.88.72-1.6 1.6-1.6h54.4c.88 0 1.6.72 1.6 1.6V58zm-1.6-8H7.8A4.8 4.8 0 0 0 3 54.8V58a8 8 0 0 0 8 8h48a8 8 0 0 0 8-8v-3.2a4.8 4.8 0 0 0-4.8-4.8z'/%3e%3cpath fill='%2335D7BE' d='M65.23 37h-3.18c-.88 0-1.6.74-1.6 1.67 0 .92.72 1.66 1.6 1.66h3.18c.88 0 1.59.75 1.59 1.67 0 .92-.71 1.67-1.6 1.67H4.78c-.87 0-1.59-.75-1.59-1.67 0-.92.72-1.67 1.6-1.67h31.81c.88 0 1.6-.74 1.6-1.66 0-.93-.72-1.67-1.6-1.67H4.77A4.9 4.9 0 0 0 0 42c0 2.76 2.14 5 4.77 5h60.46A4.9 4.9 0 0 0 70 42c0-2.76-2.14-5-4.77-5'/%3e%3c/g%3e%3c/svg%3e");
-	color: #3A4356;
-	font-size: 33px;
-	font-weight: bold;
-	line-height: 42px;
-	padding-top: 74px;
-	text-align: center;
+  font-family: 'Amatic SC';
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='70' height='66'%3e%3cg fill='none' fill-rule='evenodd'%3e%3cpath fill='%23FFCB05' d='M40 14c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m-20 0c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m15 7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m10 0c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m5-7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m4 7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m-38 0c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m14-7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5m-5 7c1.1 0 2-.67 2-1.5s-.9-1.5-2-1.5-2 .67-2 1.5.9 1.5 2 1.5'/%3e%3cpath fill='%23FFCB05' d='M6.2 20.94C6.2 11.01 18.85 3.22 35 3.22s28.8 7.79 28.8 17.72v3.23a1.6 1.6 0 0 1-1.6 1.6H7.8a1.6 1.6 0 0 1-1.6-1.6v-3.23zM7.8 29h54.4c2.65 0 4.8-2.17 4.8-4.83v-3.23C67 9 53.24 0 35 0 16.76 0 3 9 3 20.94v3.23A4.82 4.82 0 0 0 7.8 29z'/%3e%3cpath fill='%2335D7BE' d='M4.6 34.15h32.55c1.26 0 2.5.5 3.4 1.39l3.2 3.15A8.03 8.03 0 0 0 49.4 41c2.05 0 4.1-.77 5.66-2.3l3.2-3.16a4.87 4.87 0 0 1 3.39-1.39h3.75c.88 0 1.6-.7 1.6-1.57 0-.88-.72-1.58-1.6-1.58h-3.75A8 8 0 0 0 56 33.31l-3.2 3.15a4.86 4.86 0 0 1-6.8 0l-3.2-3.15A8 8 0 0 0 37.15 31H4.6c-.88 0-1.6.7-1.6 1.58 0 .87.72 1.57 1.6 1.57'/%3e%3cpath fill='%23FFCB05' d='M63.8 58a4.8 4.8 0 0 1-4.8 4.8H11A4.8 4.8 0 0 1 6.2 58v-3.2c0-.88.72-1.6 1.6-1.6h54.4c.88 0 1.6.72 1.6 1.6V58zm-1.6-8H7.8A4.8 4.8 0 0 0 3 54.8V58a8 8 0 0 0 8 8h48a8 8 0 0 0 8-8v-3.2a4.8 4.8 0 0 0-4.8-4.8z'/%3e%3cpath fill='%2335D7BE' d='M65.23 37h-3.18c-.88 0-1.6.74-1.6 1.67 0 .92.72 1.66 1.6 1.66h3.18c.88 0 1.59.75 1.59 1.67 0 .92-.71 1.67-1.6 1.67H4.78c-.87 0-1.59-.75-1.59-1.67 0-.92.72-1.67 1.6-1.67h31.81c.88 0 1.6-.74 1.6-1.66 0-.93-.72-1.67-1.6-1.67H4.77A4.9 4.9 0 0 0 0 42c0 2.76 2.14 5 4.77 5h60.46A4.9 4.9 0 0 0 70 42c0-2.76-2.14-5-4.77-5'/%3e%3c/g%3e%3c/svg%3e");
+  color: #3a4356;
+  font-size: 33px;
+  font-weight: bold;
+  line-height: 42px;
+  padding-top: 74px;
+  text-align: center;
 }
 
 .icon {
-	display: inline-block;
-	background-position: center center;
-	width: 40px;
-	height: 40px;
+  display: inline-block;
+  background-position: center center;
+  width: 40px;
+  height: 40px;
 }
 
 .icon-facebook {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3e%3cg fill='none' fill-rule='evenodd'%3e%3cpath fill='%233B5998' d='M40 20a20 20 0 1 1-40 0 20 20 0 0 1 40 0z'/%3e%3cpath fill='%23FFF' d='M25.12 21.2h-3.56v13.09h-5.4V21.2H13.6v-4.6h2.56v-2.98c0-2.12 1.01-5.46 5.45-5.46l3.99.02v4.46h-2.9c-.47 0-1.14.24-1.14 1.26v2.7h4.03l-.47 4.6z'/%3e%3c/g%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3e%3cg fill='none' fill-rule='evenodd'%3e%3cpath fill='%233B5998' d='M40 20a20 20 0 1 1-40 0 20 20 0 0 1 40 0z'/%3e%3cpath fill='%23FFF' d='M25.12 21.2h-3.56v13.09h-5.4V21.2H13.6v-4.6h2.56v-2.98c0-2.12 1.01-5.46 5.45-5.46l3.99.02v4.46h-2.9c-.47 0-1.14.24-1.14 1.26v2.7h4.03l-.47 4.6z'/%3e%3c/g%3e%3c/svg%3e");
 }
 
 .icon-google {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3e%3cg fill='none' fill-rule='evenodd'%3e%3cpath fill='%23DD4B39' d='M20 0c11 0 20 9 20 20s-9 20-20 20S0 31 0 20 9 0 20 0z'/%3e%3cpath fill='%23FFF' d='M29.87 16.8v2.13H32v2.14h-2.13v2.13h-2.14v-2.13H25.6v-2.14h2.13V16.8zM10.21 25.7a8.35 8.35 0 0 1 .12-11.46 7.48 7.48 0 0 1 8.3-1.65l1.1.64 1.24.89L19 16.15l-.74-.5a4.63 4.63 0 0 0-5.81.76 5.45 5.45 0 0 0 0 7.38 4.7 4.7 0 0 0 6.93 0c.49-.51.99-1.28 1.1-2.04v-.25h-4.44v-2.55h7.05l.12.64v1.78a7.2 7.2 0 0 1-1.86 4.45 8.03 8.03 0 0 1-11.13-.13z'/%3e%3c/g%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3e%3cg fill='none' fill-rule='evenodd'%3e%3cpath fill='%23DD4B39' d='M20 0c11 0 20 9 20 20s-9 20-20 20S0 31 0 20 9 0 20 0z'/%3e%3cpath fill='%23FFF' d='M29.87 16.8v2.13H32v2.14h-2.13v2.13h-2.14v-2.13H25.6v-2.14h2.13V16.8zM10.21 25.7a8.35 8.35 0 0 1 .12-11.46 7.48 7.48 0 0 1 8.3-1.65l1.1.64 1.24.89L19 16.15l-.74-.5a4.63 4.63 0 0 0-5.81.76 5.45 5.45 0 0 0 0 7.38 4.7 4.7 0 0 0 6.93 0c.49-.51.99-1.28 1.1-2.04v-.25h-4.44v-2.55h7.05l.12.64v1.78a7.2 7.2 0 0 1-1.86 4.45 8.03 8.03 0 0 1-11.13-.13z'/%3e%3c/g%3e%3c/svg%3e");
 }
 
 a {
-	color: #1FAFF3;
-	text-decoration: none;
+  color: #1faff3;
+  text-decoration: none;
 }
 
 form button {
-	margin-top: 50px;
-	margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .page {
-	display: flex;
-	flex-direction: column;
-	flex: 1;
-	padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 50px 60px;
 }
 
 .page .logo {
-	margin-bottom: 110px;
+  margin-bottom: 80px;
 }
 
 .page .icons {
-	text-align: center;
-	margin-bottom: 75px;
+  text-align: center;
+  margin-bottom: 75px;
 }
 
 .page .icons .icon {
-	margin: 0 20px;
+  margin: 0 20px;
 }
 
 .page .footer {
-	text-align: center;
+  text-align: center;
 }

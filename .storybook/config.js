@@ -1,5 +1,4 @@
-import { configure, addDecorator } from '@storybook/react';
-import { withViewport } from '@storybook/addon-viewport/src/preview';
+import { configure } from '@storybook/react';
 
 import '../src/style.css';
 
@@ -9,5 +8,4 @@ function loadStories() {
   req.keys().forEach(filename => req(filename));
 }
 
-addDecorator(withViewport('pixel'));
 configure(loadStories, module);

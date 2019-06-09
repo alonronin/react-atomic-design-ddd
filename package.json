@@ -5,29 +5,37 @@
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.6",
-    "history": "^4.7.2",
-    "mobx": "^5.9.0",
-    "mobx-react": "^5.4.3",
-    "mobx-react-form": "^1.36.1",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "universal-router": "^8.0.0",
+    "history": "^4.9.0",
+    "mobx": "^5.10.1",
+    "mobx-react": "^6.0.3",
+    "mobx-react-form": "^2.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "universal-router": "^8.2.0",
     "validatorjs": "^3.15.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/plugin-proposal-class-properties": "^7.3.0",
-    "@babel/plugin-proposal-decorators": "^7.3.0",
-    "@storybook/addon-actions": "^4.1.11",
-    "@storybook/addon-links": "^4.1.11",
-    "@storybook/addon-viewport": "^4.1.11",
-    "@storybook/addons": "^4.1.11",
-    "@storybook/react": "^4.1.11",
-    "babel-loader": "^8.0.5",
-    "babel-preset-minimal": "^0.1.1"
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "@storybook/addon-actions": "^5.1.3",
+    "@storybook/addon-links": "^5.1.3",
+    "@storybook/addon-viewport": "^5.1.3",
+    "@storybook/addons": "^5.1.3",
+    "@storybook/react": "^5.1.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-minimal": "^0.1.2",
+    "css-loader": "^2.1.1",
+    "prettier": "^1.18.2",
+    "style-loader": "^0.23.1"
   },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true,
+    "trailingComma": "es5"
   }
 }

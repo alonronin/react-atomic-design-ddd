@@ -1,7 +1,7 @@
 import form from '../../organism/login.form';
 
 class Store {
-	form = form;
+  form = form;
 }
 
 export default Store;

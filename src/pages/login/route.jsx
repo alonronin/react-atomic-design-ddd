@@ -5,11 +5,9 @@ import Login from './index';
 
 const path = '/login';
 const action = async () => {
-	const store = new Store();
+  const store = new Store();
 
-	return <Login store={store} />
+  return <Login store={store} />;
 };
 
-export {
-	path, action
-}
+export { path, action };
