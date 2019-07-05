@@ -55,7 +55,7 @@ label {
 .field {
   position: relative;
   height: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   flex: 1;
   display: flex;
 }
@@ -141,7 +141,7 @@ form button {
 
 .page .icons {
   text-align: center;
-  margin-bottom: 75px;
+  margin: 0;
 }
 
 .page .icons .icon {
